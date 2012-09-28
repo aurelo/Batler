@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" id="DD8E3FFD-1988-1D97-68B1-32EFF95058F4" directorySegmentName="seg_0" name="CONTEXTS">
 <createdBy>zgudasic</createdBy>
 <createdTime>2012-08-28 12:27:05 UTC</createdTime>
+<notes>A way to switch task shown. I.e. home, work. Context is related to location and time</notes>
 <ownerDesignName>butler</ownerDesignName>
 <pkName>CONTEXTS_PK</pkName>
 <fonts>

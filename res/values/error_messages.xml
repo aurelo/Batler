@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_unknown_uri">Unknown URI %s!</string>
+    <string name="error_invalid_projection">Non existant table columns for table %1$s in requested projection %2$s!</string>
+</resources>

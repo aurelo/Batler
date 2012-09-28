@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" id="B0A07821-B5C3-B0A2-AFEE-04DCD90E1B4D" directorySegmentName="seg_0" name="TEMPLATES">
 <createdBy>zgudasic</createdBy>
 <createdTime>2012-08-28 12:27:54 UTC</createdTime>
+<notes>A way to define default fields and behaviour for task entry. I.e. &quot;Quick car location save&quot; template whose purpose is to remeber current car location will atomatically save current location for task location, and task entry will offer fields like garage level/parking location number fields</notes>
 <ownerDesignName>butler</ownerDesignName>
 <pkName>TEMPLATES_PK</pkName>
 <fonts>

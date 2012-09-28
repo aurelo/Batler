@@ -1,19 +1,11 @@
 package hr.com.batler.android.model.tables;
 
-import android.provider.BaseColumns;
+import android.database.sqlite.SQLiteQueryBuilder;
 
 public interface Queryable {
 
-	public static final String ORDER_BY_ID_DESC = String.format("%s DESC",
-			BaseColumns._ID);
-	public static final String ORDER_BY_ID_ASC = String.format("%s DESC",
-			BaseColumns._ID);
-
-	public static final String[] PK_PROJECTION = new String[] { BaseColumns._ID };
-
-	public String queryAll();
-
-	public String queryById(int id);
-
-	public boolean projectionContainsValidColumns(String[] projection);
+	//public SQLiteQueryBuilder queryAll();
+	//public SQLiteQueryBuilder queryById(String id);
+	//public SQLiteQueryBuilder query(String[] projection, String selection, String[] selectionArgs, String sortOrder);
+	
 }

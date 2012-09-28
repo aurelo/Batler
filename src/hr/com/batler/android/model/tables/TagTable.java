@@ -1,12 +1,13 @@
 package hr.com.batler.android.model.tables;
 
+import hr.com.batler.android.R;
 import hr.com.batler.android.contentprovider.BatlerContract;
+import hr.com.batler.android.resources.ResourceHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.provider.BaseColumns;
 
-public class TagTable implements BaseColumns, BatlerContract.Tag.TagColumns,
-		Queryable {
+public class TagTable extends Table implements BaseColumns, BatlerContract.Tag.TagColumns{
 
 	public static final String TABLE_TAGS = "tags";
 
@@ -28,25 +29,39 @@ public class TagTable implements BaseColumns, BatlerContract.Tag.TagColumns,
 		db.execSQL(TAGS_TABLE_DROP_SQL);
 		onCreate(db);
 	}
+	
+	
+	public TagTable(ResourceHandler rh){
+		super(rh);
+		queryBuilder.setTables(TABLE_TAGS);
+	}
+	
 
-	@Override
-	public String queryAll() {
-		return SQLiteQueryBuilder.buildQueryString(false, TABLE_TAGS, null,
-				null,
-				null,
- null, ORDER_BY_ID_DESC, null);
+/*	public SQLiteQueryBuilder queryAll() {
+		return queryBuilder;
 	}
 
 	@Override
-	public String queryById(int id) {
-		return SQLiteQueryBuilder.buildQueryString(false, TABLE_TAGS,
-				PK_PROJECTION, Integer.toString(id), null, null, null, null);
+	public SQLiteQueryBuilder queryById(String id) {
+		queryBuilder.appendWhereEscapeString(restrinctOnId(id));
+		return queryBuilder;
 	}
+	*/
 
-	@Override
-	public boolean projectionContainsValidColumns(String[] projection) {
-		return TabUtils.projectionContainsValidColumns(projection,
-				BatlerContract.Tag.TagColumns.ALL_COLUMNS);
+	
+	public SQLiteQueryBuilder query(String[] projection, String selection, String[] selectionArgs, String sortOrder){
+		projectionContainsValidColumns(projection);
+		
+		queryBuilder.buildQuery(projection, selection, null, null, sortOrder, null);
+		return queryBuilder;
 	}
-
+	;
+	
+	private void projectionContainsValidColumns(String[] projection) {
+		if (!TabUtils.projectionContainsValidColumns(projection,
+				BatlerContract.Tag.TagColumns.ALL_COLUMNS)){
+			throw new IllegalArgumentException(resourceHandler.getErrorMessage(R.string.error_invalid_projection, TagTable.TABLE_TAGS, projection.toString()));
+		}
+	}
+	
 }
