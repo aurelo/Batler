@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         
-        <provider android:name=".contentprovider.BatlerContract" android:authorities="hr.com.batler.android.contentprovider"></provider>
+        <provider android:name=".contentprovider.BatlerContentProvider" android:authorities="hr.com.batler.android.contentprovider" android:exported="false"></provider>
     </application>
 
 </manifest>

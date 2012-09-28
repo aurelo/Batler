@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="A5BD0175-4970-3899-BBAF-971DBD257FA0" directorySegmentName="seg_0" name="PERSONS">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:06:02 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pkName>PERSONS_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="ABA27F15-7232-B6BF-CA11-AE1AB737B7B0">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:09:58 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CONTACT_URI" id="FF9B4CA9-B89E-756B-96DF-93E7F0D67D78">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:09:58 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="6EB8A9AE-9468-AAFD-0BDB-058829B66EA3" name="PERSONS_PK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:11:54 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="ABA27F15-7232-B6BF-CA11-AE1AB737B7B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

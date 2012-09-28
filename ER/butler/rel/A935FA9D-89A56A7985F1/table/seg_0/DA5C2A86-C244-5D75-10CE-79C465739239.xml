@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="DA5C2A86-C244-5D75-10CE-79C465739239" directorySegmentName="seg_0" name="CONTEXTS_TAGS">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:30:55 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pkName>CONTEXTS_TAGS_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="9D2CD6E6-22BC-F7ED-DC08-8073CCB40795">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:31:26 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CONTEXT_ID" id="FB4E37A0-97D3-F0F4-BBEF-9DA081AC379B">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:31:31 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86738DB9-73F2-8DB2-0CD7-A88516EF632C" referredColumn="6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TAG_ID" id="5BBA5FEC-A0BA-9006-A55B-98D593212496">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:31:36 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>620E257B-1AB0-9845-6CC6-775FFB2BE945</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A105A999-2D2F-C6FD-F409-CFA06CA4DF06" referredColumn="620E257B-1AB0-9845-6CC6-775FFB2BE945"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="D08195E5-26C7-72B1-FDBF-AE54E9534F8E" name="CONTEXTS_TAGS_PK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:31:26 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="9D2CD6E6-22BC-F7ED-DC08-8073CCB40795"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="7980C449-0CC3-87A0-F21F-9A797F6DD4C9" name="CONTEXTS_TAGS_CONTEXTS_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:31:31 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="FB4E37A0-97D3-F0F4-BBEF-9DA081AC379B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="2982E6C9-743E-92E7-7151-47C72C307118" name="CONTEXTS_TAGS_TAGS_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:31:36 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="5BBA5FEC-A0BA-9006-A55B-98D593212496"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

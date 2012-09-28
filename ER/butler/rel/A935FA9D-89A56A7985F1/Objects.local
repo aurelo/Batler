@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="DD8E3FFD-1988-1D97-68B1-32EFF95058F4" name="CONTEXTS" seqName="seg_0"/>
+   <object objectType="Table" objectID="0EE5418C-E364-4F9D-0D42-A5321B2E96DD" name="CONTEXTS_LOCATIONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="6B81ED85-651D-0B9D-D68C-0A6246846119" name="CONTEXTS_PERSONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="DA5C2A86-C244-5D75-10CE-79C465739239" name="CONTEXTS_TAGS" seqName="seg_0"/>
+   <object objectType="Table" objectID="CD0230D3-0C12-25FC-F3C5-6522E5182F57" name="CONTEXTS_TASKS" seqName="seg_0"/>
+   <object objectType="Table" objectID="15234846-033F-43A5-43AF-A63FADE6DF69" name="LOCATIONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="A5BD0175-4970-3899-BBAF-971DBD257FA0" name="PERSONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="EE4AFAE3-D0E7-2F8C-F044-E0A3B3768364" name="TAGS" seqName="seg_0"/>
+   <object objectType="Table" objectID="B46FBF68-0B6B-9497-7075-D388AF5F20D5" name="TASKS" seqName="seg_0"/>
+   <object objectType="Table" objectID="3B137B09-25B1-424B-7A48-5E90ACA992AE" name="TASKS_LOCATIONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="C49057CC-F456-0E11-B3E1-E21FFB7F2DCF" name="TASKS_PERSONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="B98A2FBF-DFB9-08A6-D413-243E22332AD5" name="TASKS_TAGS" seqName="seg_0"/>
+   <object objectType="Table" objectID="B0A07821-B5C3-B0A2-AFEE-04DCD90E1B4D" name="TEMPLATES" seqName="seg_0"/>
+   <object objectType="Table" objectID="2154BA53-4F3D-F89B-610C-1C3AB33B75D3" name="TEMPLATES_CONTEXTS" seqName="seg_0"/>
+   <object objectType="Table" objectID="21E9E4BB-B554-C8B6-5AFA-3AB7733D03F7" name="TEMPLATES_LOCATIONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="5981C19F-E507-2688-F08A-03E3E943161D" name="TEMPLATES_PERSONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="40FA3B74-96C6-7160-963C-518A4489793F" name="TEMPLATES_TAGS" seqName="seg_0"/>
+   <object objectType="Table" objectID="800CD3AE-A1A2-5616-22CE-9CB740FFF70D" name="TEMPLATES_TASKS" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="67E52491-A266-3590-ED89-166435B3FA6C" name="CONTEXTS_LOCATIONS_CONTEXTS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B572F1E3-5D6F-59B9-36B3-BF1E09B055AB" name="CONTEXTS_LOCATIONS_LOCATIONS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3DB51771-3591-76BA-2BB2-5621C20EA7B6" name="CONTEXTS_PERSONS_CONTEXTS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9BE5EF02-AD15-4182-A550-AE12B4458B17" name="CONTEXTS_PERSONS_PERSONS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="86738DB9-73F2-8DB2-0CD7-A88516EF632C" name="CONTEXTS_TAGS_CONTEXTS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A105A999-2D2F-C6FD-F409-CFA06CA4DF06" name="CONTEXTS_TAGS_TAGS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BF0F2804-8824-5210-0434-923478A8A61B" name="CONTEXTS_TASKS_CONTEXTS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7AEF7F79-6FCB-A42F-F711-AD3ECC1B7C83" name="CONTEXTS_TASKS_TASKS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="934A46F4-6098-3809-D12E-D7D27B4170CE" name="TASKS_LOCATIONS_LOCATIONS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="6C7CD847-8BE2-231B-510E-0B1D74A1B6D7" name="TASKS_LOCATIONS_TASKS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9F5F941B-AD15-4CF8-619A-15709F09EB92" name="TASKS_PERSONS_PERSONS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A36340D7-38DE-FBFD-017E-8E02E8F92DE6" name="TASKS_PERSONS_TASKS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2449B54A-D470-2614-1313-B06C4E4861A2" name="TASKS_TAGS_TAGS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="68952AAA-E4C4-7E3A-4418-5A790AB776F2" name="TASKS_TAGS_TASKS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="EB6A7945-86DF-EDCC-DB53-E5697584BB16" name="TEMPLATES_CONTEXTS_CONTEXTS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5E99EF49-ECE3-0717-7426-DEA0794EF26B" name="TEMPLATES_CONTEXTS_TEMPLATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D68A5CF6-2B2C-CAD3-D9B0-08086C51FBC2" name="TEMPLATES_LOCATIONS_LOCATIONS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8224279A-BE6F-C4BA-90E9-CA67325CC597" name="TEMPLATES_LOCATIONS_TEMPLATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B37438D2-B6B4-3DBC-F64E-264ACDD0E1A5" name="TEMPLATES_PERSONS_PERSONS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7BA9A650-2364-B0D4-5F33-D6F8EE1F2C9C" name="TEMPLATES_PERSONS_TEMPLATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="21CB2F36-B6C3-306C-B271-903372B1DC74" name="TEMPLATES_TAGS_TAGS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F6C2BD3F-B617-04C5-00EC-F39AB91CE85B" name="TEMPLATES_TAGS_TEMPLATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9CD56D16-3D25-A03B-6F9F-68B8737429AD" name="TEMPLATES_TASKS_TASKS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="790381DA-9DB4-5EE8-A7FB-CF3A500946D5" name="TEMPLATES_TASKS_TEMPLATES_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="15234846-033F-43A5-43AF-A63FADE6DF69" directorySegmentName="seg_0" name="LOCATIONS">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:29:06 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pkName>LOCATIONS_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="16A80F98-21D5-9857-E3D7-150443ACF90B">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:29:22 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="LONGITUDE" id="C50F5FFF-9D5C-B579-C02A-4F317FCBD4C2">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:29:22 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="LATITUDE" id="67293D1E-C87A-C8D3-6C69-6BA74412AE30">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:29:22 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="F32C0003-10B9-1988-2823-C732369C270E" name="LOCATIONS_PK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:29:51 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="16A80F98-21D5-9857-E3D7-150443ACF90B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

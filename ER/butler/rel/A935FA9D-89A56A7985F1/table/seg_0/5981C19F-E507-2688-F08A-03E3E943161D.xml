@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="5981C19F-E507-2688-F08A-03E3E943161D" directorySegmentName="seg_0" name="TEMPLATES_PERSONS">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:12:36 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pkName>TEMPLATES_PERSONS_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="E57E5118-1CC2-CD7E-C73B-1314116D9233">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:12:48 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TEMPLATES_ID" id="A6885968-AAA2-A995-D1CA-E413695BB60C">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:13:05 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>268A6A16-E470-77AC-8E88-E10755C8B974</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BA9A650-2364-B0D4-5F33-D6F8EE1F2C9C" referredColumn="268A6A16-E470-77AC-8E88-E10755C8B974"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="PERSONS_ID" id="BA149F6C-825D-296B-4A5A-9A25908DAF24">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:13:12 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>ABA27F15-7232-B6BF-CA11-AE1AB737B7B0</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B37438D2-B6B4-3DBC-F64E-264ACDD0E1A5" referredColumn="ABA27F15-7232-B6BF-CA11-AE1AB737B7B0"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="534387E7-4822-FD08-E5FE-0D6411E8B3B9" name="TEMPLATES_PERSONS_PK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:12:48 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="E57E5118-1CC2-CD7E-C73B-1314116D9233"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="6B85273B-304F-6334-8CFB-A2CDE591E059" name="TEMPLATES_PERSONS_TEMPLATES_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:13:05 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="A6885968-AAA2-A995-D1CA-E413695BB60C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="B3343D03-D053-94C5-FD1A-7149E07BBB42" name="TEMPLATES_PERSONS_PERSONS_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:13:12 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="BA149F6C-825D-296B-4A5A-9A25908DAF24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

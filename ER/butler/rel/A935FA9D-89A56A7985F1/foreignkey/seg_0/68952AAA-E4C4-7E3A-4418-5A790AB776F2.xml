@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="68952AAA-E4C4-7E3A-4418-5A790AB776F2" directorySegmentName="seg_0" name="TASKS_TAGS_TASKS_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:30:12 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<containerWithKeyObject>B98A2FBF-DFB9-08A6-D413-243E22332AD5</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>C273E756-0723-50EE-B4D4-DC17C35B64B3</localFKIndex>
+<keyObject>D9DE4533-2440-6613-4506-5E874CF47E82</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

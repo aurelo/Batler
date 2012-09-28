@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="D68A5CF6-2B2C-CAD3-D9B0-08086C51FBC2" directorySegmentName="seg_0" name="TEMPLATES_LOCATIONS_LOCATIONS_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:35:48 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<containerWithKeyObject>21E9E4BB-B554-C8B6-5AFA-3AB7733D03F7</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>8DB7658C-0E5A-22C4-4743-FBE36158F8EA</localFKIndex>
+<keyObject>F32C0003-10B9-1988-2823-C732369C270E</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="B46FBF68-0B6B-9497-7075-D388AF5F20D5" directorySegmentName="seg_0" name="TASKS">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:24:43 UTC</createdTime>
+<notes>Urgency and importance:&lt;br/&gt;http://blog.chasejarvis.com/blog/2012/07/the-7-habits-of-highly-effective-people/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ChaseJarvis+%28Chase+Jarvis+Blog%29</notes>
+<ownerDesignName>butler</ownerDesignName>
+<pkName>TASKS_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="B70C3D88-AFB9-D6C0-0468-EC4467BAA50F">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:24:56 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="NAME" id="EBE4B8EF-0019-7496-C7A8-6754BAF0CC4A">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:25:38 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="DESCRIPTION" id="B86DE81B-24C9-B733-E0E1-51D3AD87BF86">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:25:38 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CREATED_BY" id="2A4D508F-8012-D2E0-59CF-2B459637AF86">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:26:02 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CREATION_ DATE" id="4C02F50B-3DE8-2D8B-479A-2748897C4943">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:26:02 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="LAST_ UPDATED_BY" id="EA1BCDC7-E6D2-A4F6-F6BE-37A615BB7659">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:26:02 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="LAST_UPDATE_ DATE" id="9257F966-83AE-2CFC-61F0-919E2303DF59">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:26:02 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="URGENCY" id="B8FD78D6-EB8B-C092-7AEE-5AC57D14502D">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-29 07:09:31 UTC</createdTime>
+<comment>determines when task should be done. Urgent tasks should be done as soon as possible. Together with importance determines what kind of task it is. Non important non urgent tasks - check twitter. Non urgent, important tasks are those that if not taken care of will become urgent important, like out health - excersise. Important, but not urgent tasks are task that we need to look at, but it&apos;s not immediate, like answering our client mail.</comment>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="IMPORTANCE" id="7D859802-1B3E-1182-09DA-A38E8241545E">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-29 07:09:46 UTC</createdTime>
+<comment>determines task importance</comment>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="D9DE4533-2440-6613-4506-5E874CF47E82" name="TASKS_PK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:24:56 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="B70C3D88-AFB9-D6C0-0468-EC4467BAA50F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

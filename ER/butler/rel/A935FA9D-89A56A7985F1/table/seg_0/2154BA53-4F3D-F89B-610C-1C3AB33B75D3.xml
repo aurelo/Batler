@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="2154BA53-4F3D-F89B-610C-1C3AB33B75D3" directorySegmentName="seg_0" name="TEMPLATES_CONTEXTS">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:25:21 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pkName>TEMPLATES_CONTEXTS_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="C1410430-1F74-D696-176B-4248CE4AA0E3">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:25:33 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CONTEXTS_ID" id="EF7F6CCD-62EE-00BA-E133-7757607CC980">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:25:39 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB6A7945-86DF-EDCC-DB53-E5697584BB16" referredColumn="6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TEMPLATES_ID" id="260E1500-8C40-AD5A-3B00-9395852E5F4D">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:25:43 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>268A6A16-E470-77AC-8E88-E10755C8B974</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E99EF49-ECE3-0717-7426-DEA0794EF26B" referredColumn="268A6A16-E470-77AC-8E88-E10755C8B974"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C4ED8E4F-3FE1-2494-CE50-FA45B8ACD180" name="TEMPLATES_CONTEXTS_PK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:25:33 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="C1410430-1F74-D696-176B-4248CE4AA0E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="7F9E9CB2-573D-B4E1-B305-2F45C00C3F89" name="TEMPLATES_CONTEXTS_CONTEXTS_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:25:39 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="EF7F6CCD-62EE-00BA-E133-7757607CC980"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="4C41BED2-44DB-6A12-2776-C5817F7CFCA2" name="TEMPLATES_CONTEXTS_TEMPLATES_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 13:25:43 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="260E1500-8C40-AD5A-3B00-9395852E5F4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

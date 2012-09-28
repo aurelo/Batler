@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="800CD3AE-A1A2-5616-22CE-9CB740FFF70D" directorySegmentName="seg_0" name="TEMPLATES_TASKS">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:46:33 UTC</createdTime>
+<notes>If tasks are created under template, they override currently active contexts and assign template contexts.&lt;br/&gt;&lt;br/&gt;If there are locations assigned to templates, they are not rewritten in tasks_locations, but tasks locations are union of template locations and manually assigned locations.</notes>
+<ownerDesignName>butler</ownerDesignName>
+<pkName>TEMPLATES_TASKS_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="FA70CBD0-19B9-433B-024C-E6F4682145F2">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:46:42 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TEMPLATES_ID" id="94870EB1-4286-C51F-DF74-BD6FC16F8DA7">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:46:49 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>268A6A16-E470-77AC-8E88-E10755C8B974</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="790381DA-9DB4-5EE8-A7FB-CF3A500946D5" referredColumn="268A6A16-E470-77AC-8E88-E10755C8B974"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TASKS_ID" id="444DFF3D-87E9-7CB5-79BD-41A98F90A543">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:46:55 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>B70C3D88-AFB9-D6C0-0468-EC4467BAA50F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CD56D16-3D25-A03B-6F9F-68B8737429AD" referredColumn="B70C3D88-AFB9-D6C0-0468-EC4467BAA50F"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="CA4E9719-3A80-5170-97C0-861588C45222" name="TEMPLATES_TASKS_PK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:46:44 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="FA70CBD0-19B9-433B-024C-E6F4682145F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="272DDA00-D964-AA13-E196-72AD3CED5AFC" name="TEMPLATES_TASKS_TEMPLATES_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:46:49 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="94870EB1-4286-C51F-DF74-BD6FC16F8DA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="3C830876-CB20-6214-8E86-463817801EDA" name="TEMPLATES_TASKS_TASKS_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-08-28 12:46:55 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="444DFF3D-87E9-7CB5-79BD-41A98F90A543"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

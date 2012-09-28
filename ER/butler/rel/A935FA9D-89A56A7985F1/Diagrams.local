@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="61159058-B704-2FB7-AF24-77F19EF95FF6" name="Core butler" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
