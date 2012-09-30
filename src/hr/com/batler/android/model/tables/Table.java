@@ -9,6 +9,8 @@ public abstract class Table implements Queryable{
 	protected ResourceHandler resourceHandler;
 	protected SQLiteQueryBuilder queryBuilder;
 	
+	protected static final String TAB_COUNT_SQL = "select count(*) from %s";
+
 	public static final String ORDER_BY_ID_DESC = String.format("%s DESC",
 			BaseColumns._ID);
 	public static final String ORDER_BY_ID_ASC = String.format("%s ASC",
@@ -38,6 +40,5 @@ public abstract class Table implements Queryable{
 	public SQLiteQueryBuilder getBaseQueryBuilder(){
 		return this.queryBuilder;
 	}
-	
 	
 }

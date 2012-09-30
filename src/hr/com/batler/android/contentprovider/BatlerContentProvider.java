@@ -51,6 +51,10 @@ public class BatlerContentProvider extends ContentProvider {
 			String[] selectionArgs, String sortOrder) {
 		
 		SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
+
+		boolean isRawQuery = false;
+		String sql = null;
+
 		switch (matcher.match(uri)) {
 		case TAGS:
 			qb = new TagTable(resHandler).getBaseQueryBuilder();
@@ -64,7 +68,9 @@ public class BatlerContentProvider extends ContentProvider {
 		}
 		
 		SQLiteDatabase db = openForRead();
-		return qb.query(db, projection, selection, selectionArgs, null, null, sortOrder);
+
+		return qb.query(db, projection, selection, selectionArgs, null, null,
+				sortOrder);
 	}
 
 	@Override

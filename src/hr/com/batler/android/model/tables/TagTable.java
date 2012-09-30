@@ -9,14 +9,17 @@ import android.provider.BaseColumns;
 
 public class TagTable extends Table implements BaseColumns, BatlerContract.Tag.TagColumns{
 
+	private static final String TAG = TagTable.class.toString();
+
 	public static final String TABLE_TAGS = "tags";
 
 	private static final String TAGS_TABLE_CREATE_SQL = String.format(
-			"create table %s (%s primary key autoincrement, %s text, %s text)",
+"create table %s (%s integer primary key autoincrement, %s text, %s text)",
 			TABLE_TAGS, BaseColumns._ID, BatlerContract.Tag.TagColumns.NAME,
 			BatlerContract.Tag.TagColumns.DESCRIPTION);
 	private static final String TAGS_TABLE_DROP_SQL = String.format(
 			"drop table if exists %s", TABLE_TAGS);
+
 
 
 
@@ -64,4 +67,5 @@ public class TagTable extends Table implements BaseColumns, BatlerContract.Tag.T
 		}
 	}
 	
+
 }

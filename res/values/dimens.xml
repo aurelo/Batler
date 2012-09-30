@@ -1,7 +1,12 @@
 <resources>
 
-    <dimen name="padding_small">8dp</dimen>
-    <dimen name="padding_medium">8dp</dimen>
-    <dimen name="padding_large">16dp</dimen>
+    <dimen name="window_to_content_spacing">10dip</dimen>
+    <dimen name="fragment_spacing">@dimen/window_to_content_spacing</dimen>
+    
+    <dimen name="zero_dim">0dip</dimen>
+    
+    <dimen name="padding_small">8dip</dimen>
+    <dimen name="padding_medium">8dip</dimen>
+    <dimen name="padding_large">16dip</dimen>
 
 </resources>

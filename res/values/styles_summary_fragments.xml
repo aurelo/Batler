@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="summary_fragments"></style>
+    
+    <style name="summary_fragments.one_vertical_column">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/zero_dim</item>
+        <item name="android:layout_weight">1</item>
+    
+    </style>
+    
+    <style name="summary_fragments.one_vertical_column.non_last_element">
+        <item name="android:layout_marginBottom">@dimen/fragment_spacing</item>
+    </style>
+    
+</resources>

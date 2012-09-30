@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/window_to_content_spacing"
+     >
+
+<fragment class="hr.com.batler.android.fragments.TagsSummaryFragment"
+    android:id="@+id/fragment_tags_summary"
+    style="@style/summary_fragments.one_vertical_column.non_last_element"
+    />
+
+
+<fragment class="hr.com.batler.android.fragments.TagsSummaryFragment"
+    android:id="@+id/fragment_tags_summary1"
+    style="@style/summary_fragments.one_vertical_column.non_last_element"
+    />
+
+
+<fragment class="hr.com.batler.android.fragments.TagsSummaryFragment"
+    android:id="@+id/fragment_tags_summary2"
+    style="@style/summary_fragments.one_vertical_column.non_last_element"
+    />
+
+
+<fragment class="hr.com.batler.android.fragments.TagsSummaryFragment"
+    android:id="@+id/fragment_tags_summary3"
+    style="@style/summary_fragments.one_vertical_column"
+    />
+
+</LinearLayout>

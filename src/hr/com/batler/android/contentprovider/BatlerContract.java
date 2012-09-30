@@ -7,6 +7,7 @@ import android.provider.BaseColumns;
 public final class BatlerContract {
 
 	public static final String FORWARDSLASH = "/";
+	public static final String TAB_COUNT = "count";
 	
 	// the scheme part of the provider's URI
 	private static final String SCHEME = "content://";
@@ -18,6 +19,9 @@ public final class BatlerContract {
 		
 		public static final String BASE_PATH = "tags";
 		public static final Uri CONTENT_URI = Uri.parse(SCHEME+AUTHORITY+FORWARDSLASH+BASE_PATH);
+		public static final Uri CONTENT_URI_ROWS_COUNT = Uri.parse(SCHEME
+				+ AUTHORITY + FORWARDSLASH + BASE_PATH + FORWARDSLASH
+				+ TAB_COUNT);
 		
 		public static String CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE + FORWARDSLASH + AUTHORITY + FORWARDSLASH + BASE_PATH;
 		public static String CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE + FORWARDSLASH + AUTHORITY + FORWARDSLASH + BASE_PATH;
