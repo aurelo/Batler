@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" id="DD8E3FFD-1988-1D97-68B1-32EFF95058F4" directorySegmentName="seg_0" name="PERSPECTIVES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="81172516-0866-DA33-548D-D1B989D78577" directorySegmentName="seg_0" name="TIME">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:27:05 UTC</createdTime>
-<notes>A way to switch task shown. I.e. home, work. Context is related to location and time</notes>
+<createdTime>2012-10-01 12:37:06 UTC</createdTime>
+<notes>Describes date and/or time. Includes reacuring events. Can be applied to tasks and perspective. Same level citizen as location with which it provides time and date dimension.</notes>
 <ownerDesignName>butler</ownerDesignName>
-<pkName>CONTEXTS_PK</pkName>
+<pkName>TIME_PK</pkName>
 <fonts>
 <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
 <foType>Title</foType>
@@ -41,33 +41,24 @@
 </FontObject>
 </fonts>
 <columns>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="_ID" id="9F75E96E-A694-54E2-39E4-DCCF2D4CB126">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:27:48 UTC</createdTime>
+<createdTime>2012-10-01 12:38:48 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <use>0</use>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="NAME" id="28BDD772-46CB-FEFA-488F-1B351C3B148B">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="DURATION" id="E5049FEC-D6E7-2361-F6BC-522796F586BF">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:27:48 UTC</createdTime>
-<ownerDesignName>butler</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="DESCRIPTION" id="B08B9554-1771-EB97-3114-02475162BBF4">
-<createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:27:48 UTC</createdTime>
+<createdTime>2012-10-01 12:38:48 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="AUTOMATICALLY_APPLIED" id="6DCD8BE1-7EE1-93A1-FC80-80B89834E3D7">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="RRULE" id="385CA7F1-EE94-9DB0-50AD-31CB6620643D">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:40:58 UTC</createdTime>
-<comment>Determines if context is automatically applied to newly created tasks if context rules are met, i.e. if task is created on location and time assigned to context</comment>
+<createdTime>2012-10-01 12:38:48 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -75,14 +66,14 @@
 </Column>
 </columns>
 <indexes>
-<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="4DD82FFB-EF58-64D2-2533-D91C3093896B" name="CONTEXTS_PK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="7D54685D-0590-CEC1-F06F-973CE9994C64" name="TIME_PK">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:30:01 UTC</createdTime>
+<createdTime>2012-10-01 12:41:17 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <indexColumnUsage>
-<colUsage columnID="6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388"/>
+<colUsage columnID="9F75E96E-A694-54E2-39E4-DCCF2D4CB126"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

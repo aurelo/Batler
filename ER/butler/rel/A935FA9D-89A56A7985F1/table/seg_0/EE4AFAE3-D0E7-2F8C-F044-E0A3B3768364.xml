@@ -63,6 +63,22 @@
 <use>0</use>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CREATED_DATE" id="F6892919-1D5F-02AA-A8D1-BE17E4883B19">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-10-01 10:56:42 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="LAST_UPDATE_DATE" id="25F3F122-88FF-E523-AE23-35257B807A37">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-10-01 10:56:42 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes>
 <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="925A1107-9627-DF53-D050-F2615C819401" name="TAGS_PK">

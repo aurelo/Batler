@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" id="A5BD0175-4970-3899-BBAF-971DBD257FA0" directorySegmentName="seg_0" name="PERSONS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="A5BD0175-4970-3899-BBAF-971DBD257FA0" directorySegmentName="seg_0" name="COLABORATOR">
 <createdBy>zgudasic</createdBy>
 <createdTime>2012-08-28 13:06:02 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
@@ -50,6 +50,14 @@
 <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CONTACT_URI" id="FF9B4CA9-B89E-756B-96DF-93E7F0D67D78">
 <createdBy>zgudasic</createdBy>
 <createdTime>2012-08-28 13:09:58 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CONTACT_GROUP_URI" id="F0B9E1DC-FA8F-CFA1-1F85-CBF8C58167A3">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-10-01 12:06:43 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
