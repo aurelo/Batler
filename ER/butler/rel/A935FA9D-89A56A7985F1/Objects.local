@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
-   <object objectType="Table" objectID="A5BD0175-4970-3899-BBAF-971DBD257FA0" name="COLABORATOR" seqName="seg_0"/>
+   <object objectType="Table" objectID="A5BD0175-4970-3899-BBAF-971DBD257FA0" name="COLABORATORS" seqName="seg_0"/>
    <object objectType="Table" objectID="15234846-033F-43A5-43AF-A63FADE6DF69" name="LOCATIONS" seqName="seg_0"/>
    <object objectType="Table" objectID="DD8E3FFD-1988-1D97-68B1-32EFF95058F4" name="PERSPECTIVES" seqName="seg_0"/>
    <object objectType="Table" objectID="6B81ED85-651D-0B9D-D68C-0A6246846119" name="PERSPECTIVE_COLABORATORS" seqName="seg_0"/>
@@ -26,7 +26,6 @@
    <object objectType="FKIndexAssociation" objectID="9BE5EF02-AD15-4182-A550-AE12B4458B17" name="CONTEXTS_PERSONS_PERSONS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="86738DB9-73F2-8DB2-0CD7-A88516EF632C" name="CONTEXTS_TAGS_CONTEXTS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="A105A999-2D2F-C6FD-F409-CFA06CA4DF06" name="CONTEXTS_TAGS_TAGS_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="CC9D09AD-A9F4-236C-AFD4-BAC2B379055C" name="TASK_TIME_TASKS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="500F81C1-3CC8-B385-E1FE-B164DFEEA57F" name="PERSPECTIVE_TIME_PERSPECTIVES_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="35BBB8EF-FD62-20BB-0F9E-29F3901450D1" name="PERSPECTIVE_TIME_TIME_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="934A46F4-6098-3809-D12E-D7D27B4170CE" name="TASKS_LOCATIONS_LOCATIONS_FK" seqName="seg_0"/>
@@ -35,6 +34,7 @@
    <object objectType="FKIndexAssociation" objectID="A36340D7-38DE-FBFD-017E-8E02E8F92DE6" name="TASKS_PERSONS_TASKS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="2449B54A-D470-2614-1313-B06C4E4861A2" name="TASKS_TAGS_TAGS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="68952AAA-E4C4-7E3A-4418-5A790AB776F2" name="TASKS_TAGS_TASKS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CC9D09AD-A9F4-236C-AFD4-BAC2B379055C" name="TASK_TIME_TASKS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="DA0E58B5-F0D3-D865-585A-2D5055357EEA" name="TASK_TIME_TIME_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="D68A5CF6-2B2C-CAD3-D9B0-08086C51FBC2" name="TEMPLATES_LOCATIONS_LOCATIONS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="8224279A-BE6F-C4BA-90E9-CA67325CC597" name="TEMPLATES_LOCATIONS_TEMPLATES_FK" seqName="seg_0"/>
