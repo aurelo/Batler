@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class TagsSummaryFragment extends Fragment implements
@@ -22,6 +23,8 @@ public class TagsSummaryFragment extends Fragment implements
 
 	public interface OnTagsSummarySelectedListener {
 		public void onTagsSelected();
+
+		public void onTagDetailClicked();
 	}
 
 	public static final String TAG = TagsSummaryFragment.class.toString();
@@ -29,6 +32,7 @@ public class TagsSummaryFragment extends Fragment implements
 	private BatlerApplication app;
 	private OnTagsSummarySelectedListener tagsSelectedListener;
 	private TextView tagsCount;
+	private ImageView createNewTag;
 
 	private View fragmentContainerView;
 
@@ -46,9 +50,15 @@ public class TagsSummaryFragment extends Fragment implements
 				R.layout.fragment_tags_summary,
 				container,
 				false);
+		this.fragmentContainerView.setOnClickListener(this);
 
 		tagsCount = (TextView) fragmentContainerView
 				.findViewById(R.id.summary_count_tv);
+		createNewTag = (ImageView) fragmentContainerView
+				.findViewById(R.id.create_new_tag);
+
+		createNewTag.setOnClickListener(this);
+
 		retireveTagsData();
 
 		return this.fragmentContainerView;
@@ -74,7 +84,6 @@ public class TagsSummaryFragment extends Fragment implements
 
 	@Override
 	public void onResume() {
-		this.fragmentContainerView.setOnClickListener(this);
 		super.onResume();
 	}
 
@@ -83,8 +92,15 @@ public class TagsSummaryFragment extends Fragment implements
 	}
 
 	@Override
-	public void onClick(View arg0) {
-		tagsSelectedListener.onTagsSelected();
+	public void onClick(View view) {
+		switch (view.getId()) {
+		case R.id.create_new_tag:
+			tagsSelectedListener.onTagDetailClicked();
+			break;
+		default:
+			tagsSelectedListener.onTagsSelected();
+			break;
+		}
 
 	}
 

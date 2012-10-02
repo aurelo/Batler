@@ -3,25 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF"
-    android:padding="10dip"
- >
-    
-    <TextView 
+    android:padding="10dip" >
+
+    <TextView
         android:id="@+id/summary_count_tv"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="25 tags"
-        />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="25 tags" />
 
     <Button
         android:id="@+id/show_tags_list_button"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/show_tags_list"
-         />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/show_tags_list" />
 
-</RelativeLayout> 
+    <ImageView
+        android:id="@+id/create_new_tag"
+        android:layout_width="68dip"
+        android:layout_height="68dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/show_tags_list_button"
+        android:contentDescription="@string/add_new_tag"
+        android:src="@drawable/content_new" />
+
+</RelativeLayout>

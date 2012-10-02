@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="show_tags_list">Show tags list</string>
+    <string name="add_new_tag">Add new tag</string>
+    <string name="tag_detail_activity_enter_tag_name">Enter tag name</string>
+    <string name="tag_detail_activity_enter_tag_description">Enter tag description</string>
+    <string name="tag_detail_activity_save_tag">Save tag</string>
 </resources>
