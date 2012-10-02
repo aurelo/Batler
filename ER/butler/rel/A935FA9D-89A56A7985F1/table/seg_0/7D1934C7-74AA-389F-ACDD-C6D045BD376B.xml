@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" id="6B81ED85-651D-0B9D-D68C-0A6246846119" directorySegmentName="seg_0" name="PERSPECTIVE_COLABORATORS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="7D1934C7-74AA-389F-ACDD-C6D045BD376B" directorySegmentName="seg_0" name="TASK_TIME">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 13:13:38 UTC</createdTime>
+<createdTime>2012-10-01 12:41:58 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
-<pkName>CONTEXTS_PERSONS_PK</pkName>
+<pkName>TASK_TIME_PK</pkName>
 <fonts>
 <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
 <foType>Title</foType>
@@ -40,65 +40,65 @@
 </FontObject>
 </fonts>
 <columns>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="76EC6F11-BC3F-4747-171F-A480A8A78D7E">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="_ID" id="83ABA079-2266-BF64-0861-E0121C550D42">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 13:14:00 UTC</createdTime>
+<createdTime>2012-10-01 12:42:11 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <use>0</use>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="COLABORATOR_ID" id="1384ADF9-D932-A241-984C-E6CCDACA5742">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TIME_ID" id="6D605CEA-FA38-9EF1-DF66-31E6AE6A5EF5">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 13:14:13 UTC</createdTime>
+<createdTime>2012-10-01 12:42:22 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <use>0</use>
-<delegate>ABA27F15-7232-B6BF-CA11-AE1AB737B7B0</delegate>
+<delegate>9F75E96E-A694-54E2-39E4-DCCF2D4CB126</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9BE5EF02-AD15-4182-A550-AE12B4458B17" referredColumn="ABA27F15-7232-B6BF-CA11-AE1AB737B7B0"/>
+<colAssociation fkAssociation="DA0E58B5-F0D3-D865-585A-2D5055357EEA" referredColumn="9F75E96E-A694-54E2-39E4-DCCF2D4CB126"/>
 </associations>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CONTEXT_ID" id="FD6B15B3-E3AE-809C-99CB-41384B86F119">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TASK_ID" id="CF60D2AA-D2D6-8202-70F6-A1C3518FC074">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 13:14:20 UTC</createdTime>
+<createdTime>2012-10-01 12:42:27 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <use>0</use>
-<delegate>6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388</delegate>
+<delegate>B70C3D88-AFB9-D6C0-0468-EC4467BAA50F</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="3DB51771-3591-76BA-2BB2-5621C20EA7B6" referredColumn="6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388"/>
+<colAssociation fkAssociation="CC9D09AD-A9F4-236C-AFD4-BAC2B379055C" referredColumn="B70C3D88-AFB9-D6C0-0468-EC4467BAA50F"/>
 </associations>
 </Column>
 </columns>
 <indexes>
-<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="66D22417-ABB8-6AB3-250A-30E90A8EE312" name="CONTEXTS_PERSONS_PK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="CC5E79C6-C2FF-7523-66C2-0A663AA31D37" name="TASK_TIME_PK">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 13:14:02 UTC</createdTime>
+<createdTime>2012-10-01 12:42:18 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <indexColumnUsage>
-<colUsage columnID="76EC6F11-BC3F-4747-171F-A480A8A78D7E"/>
+<colUsage columnID="83ABA079-2266-BF64-0861-E0121C550D42"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="DD907161-6A08-633E-01C6-931CAF94F9FC" name="CONTEXTS_PERSONS_PERSONS_FK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="EF4740BC-46CA-DC50-9E62-7CF54296BFAC" name="TASK_TIME_TIME_FK">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 13:14:13 UTC</createdTime>
+<createdTime>2012-10-01 12:42:22 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <indexColumnUsage>
-<colUsage columnID="1384ADF9-D932-A241-984C-E6CCDACA5742"/>
+<colUsage columnID="6D605CEA-FA38-9EF1-DF66-31E6AE6A5EF5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="E960E05A-584E-FBEC-C932-2A11329F5F11" name="CONTEXTS_PERSONS_CONTEXTS_FK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="7984CEEA-47B0-67A0-B609-4DDAFF01EE5D" name="TASK_TIME_TASKS_FK">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 13:14:20 UTC</createdTime>
+<createdTime>2012-10-01 12:42:27 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <indexColumnUsage>
-<colUsage columnID="FD6B15B3-E3AE-809C-99CB-41384B86F119"/>
+<colUsage columnID="CF60D2AA-D2D6-8202-70F6-A1C3518FC074"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

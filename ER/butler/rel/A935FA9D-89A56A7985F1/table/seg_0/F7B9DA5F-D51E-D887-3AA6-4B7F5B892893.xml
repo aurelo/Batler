@@ -1,10 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" id="DD8E3FFD-1988-1D97-68B1-32EFF95058F4" directorySegmentName="seg_0" name="PERSPECTIVES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="F7B9DA5F-D51E-D887-3AA6-4B7F5B892893" directorySegmentName="seg_0" name="TEMPLATES_PARAMS">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:27:05 UTC</createdTime>
-<notes>A way to switch task shown. I.e. home, work. Context is related to location and time</notes>
+<createdTime>2012-10-01 11:20:14 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
-<pkName>CONTEXTS_PK</pkName>
 <fonts>
 <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
 <foType>Title</foType>
@@ -41,48 +39,51 @@
 </FontObject>
 </fonts>
 <columns>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID" id="6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="_ID" id="CE1516C8-92AD-F932-A1B7-2F6BDD648E6B">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:27:48 UTC</createdTime>
-<ownerDesignName>butler</ownerDesignName>
-<use>0</use>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="NAME" id="28BDD772-46CB-FEFA-488F-1B351C3B148B">
-<createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:27:48 UTC</createdTime>
+<createdTime>2012-10-01 11:21:05 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="DESCRIPTION" id="B08B9554-1771-EB97-3114-02475162BBF4">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="MIME_TYPE" id="B61B45D6-D4A8-32BC-5BB3-E6E6410C0729">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:27:48 UTC</createdTime>
+<createdTime>2012-10-01 11:21:05 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column class="oracle.dbtools.crest.model.design.relational.Column" name="AUTOMATICALLY_APPLIED" id="6DCD8BE1-7EE1-93A1-FC80-80B89834E3D7">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="VALUE" id="3D5377CB-9C48-F49F-F84C-BAF2EB5DCF30">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:40:58 UTC</createdTime>
-<comment>Determines if context is automatically applied to newly created tasks if context rules are met, i.e. if task is created on location and time assigned to context</comment>
+<createdTime>2012-10-01 11:21:05 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="TEMPLATE_ID" id="7E22DAE6-E248-50F8-E1EE-7B9E046B1776">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-10-01 11:21:14 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<use>0</use>
+<delegate>268A6A16-E470-77AC-8E88-E10755C8B974</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E94D6851-91C4-B285-A66A-21F2DBF01353" referredColumn="268A6A16-E470-77AC-8E88-E10755C8B974"/>
+</associations>
 </Column>
 </columns>
 <indexes>
-<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="4DD82FFB-EF58-64D2-2533-D91C3093896B" name="CONTEXTS_PK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="F23D0BE0-547D-8B1A-772A-D1BF46AD551D" name="TEMPLATES_PARAMS_TEMPLATES_FK">
 <createdBy>zgudasic</createdBy>
-<createdTime>2012-08-28 12:30:01 UTC</createdTime>
+<createdTime>2012-10-01 11:21:14 UTC</createdTime>
 <ownerDesignName>butler</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
+<indexState>Foreign Key</indexState>
 <indexColumnUsage>
-<colUsage columnID="6AC9D9EF-CF58-6E4B-51EF-DF44F7B3B388"/>
+<colUsage columnID="7E22DAE6-E248-50F8-E1EE-7B9E046B1776"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

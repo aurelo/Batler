@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="500F81C1-3CC8-B385-E1FE-B164DFEEA57F" directorySegmentName="seg_0" name="PERSPECTIVE_TIME_PERSPECTIVES_FK">
+<createdBy>zgudasic</createdBy>
+<createdTime>2012-10-01 12:40:54 UTC</createdTime>
+<ownerDesignName>butler</ownerDesignName>
+<containerWithKeyObject>65D8D573-B0BE-D76F-06F7-69E5A42B05A9</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>4BAACF59-4CE8-994E-A247-8406463623F2</localFKIndex>
+<keyObject>4DD82FFB-EF58-64D2-2533-D91C3093896B</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

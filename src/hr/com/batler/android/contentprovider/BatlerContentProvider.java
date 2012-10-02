@@ -52,9 +52,6 @@ public class BatlerContentProvider extends ContentProvider {
 		
 		SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
 
-		boolean isRawQuery = false;
-		String sql = null;
-
 		switch (matcher.match(uri)) {
 		case TAGS:
 			qb = new TagTable(resHandler).getBaseQueryBuilder();
@@ -76,6 +73,7 @@ public class BatlerContentProvider extends ContentProvider {
 	@Override
 	public int delete(Uri uri, String selection, String[] selectionArgs) {
 		SQLiteDatabase db = openForWrite();
+		db.close();
 		return 0;
 	}
 
@@ -93,7 +91,6 @@ public class BatlerContentProvider extends ContentProvider {
 
 	@Override
 	public Uri insert(Uri uri, ContentValues values) {
-		SQLiteDatabase db = openForWrite();
 		return null;
 	}
 
@@ -102,7 +99,6 @@ public class BatlerContentProvider extends ContentProvider {
 	@Override
 	public int update(Uri uri, ContentValues values, String selection,
 			String[] selectionArgs) {
-		SQLiteDatabase db = openForWrite();
 		return 0;
 	}
 
