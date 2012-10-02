@@ -10,7 +10,6 @@ import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -33,7 +32,6 @@ public class TagsSummaryFragment extends Fragment implements
 
 	private View fragmentContainerView;
 
-	private SimpleCursorAdapter adapter;
 	private static final int LOAD_TAGS = 1;
 
 	@Override
