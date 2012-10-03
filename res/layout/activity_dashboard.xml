@@ -11,21 +11,8 @@
     style="@style/summary_fragments.one_vertical_column.non_last_element"
     />
 
-
 <fragment class="hr.com.batler.android.fragments.TagsSummaryFragment"
-    android:id="@+id/fragment_tags_summary1"
-    style="@style/summary_fragments.one_vertical_column.non_last_element"
-    />
-
-
-<fragment class="hr.com.batler.android.fragments.TagsSummaryFragment"
-    android:id="@+id/fragment_tags_summary2"
-    style="@style/summary_fragments.one_vertical_column.non_last_element"
-    />
-
-
-<fragment class="hr.com.batler.android.fragments.TagsSummaryFragment"
-    android:id="@+id/fragment_tags_summary3"
+    android:id="@+id/fragment_location_summary"
     style="@style/summary_fragments.one_vertical_column"
     />
 

@@ -5,8 +5,11 @@ import hr.com.batler.android.contentprovider.BatlerContract;
 import hr.com.batler.android.contentprovider.DescColumns;
 import hr.com.batler.android.contentprovider.WhenColumns;
 import hr.com.batler.android.resources.ResourceHandler;
+import android.content.ContentUris;
+import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
+import android.net.Uri;
 import android.provider.BaseColumns;
 
 public class TagTable extends Table implements BaseColumns, WhenColumns, BatlerContract.Tag.TagColumns{
@@ -62,7 +65,19 @@ public class TagTable extends Table implements BaseColumns, WhenColumns, BatlerC
 		return queryBuilder;
 	}
 	;
-	
+
+	public static Uri insert(SQLiteDatabase database, ContentValues values) {
+		long rowId;
+		Uri returnUri = null;
+		Table.addWhenColumnsToContentValuesForInsert(values);
+		rowId = database.insert(TagTable.TABLE_TAGS, null, values);
+		if (rowId != -1 && rowId > 0) {
+			returnUri = ContentUris.withAppendedId(
+					BatlerContract.Tag.CONTENT_URI, rowId);
+		}
+		return returnUri;
+	}
+
 	private void projectionContainsValidColumns(String[] projection) {
 		if (!TabUtils.projectionContainsValidColumns(projection,
 				BatlerContract.Tag.TagColumns.ALL_COLUMNS)){

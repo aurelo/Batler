@@ -169,17 +169,15 @@ public final class R {
         public static final int social_share=0x7f020090;
     }
     public static final class id {
-        public static final int create_new_tag=0x7f090009;
+        public static final int create_new_tag=0x7f090007;
+        public static final int fragment_location_summary=0x7f090001;
         public static final int fragment_tags_summary=0x7f090000;
-        public static final int fragment_tags_summary1=0x7f090001;
-        public static final int fragment_tags_summary2=0x7f090002;
-        public static final int fragment_tags_summary3=0x7f090003;
-        public static final int menu_settings=0x7f09000a;
-        public static final int show_tags_list_button=0x7f090008;
-        public static final int summary_count_tv=0x7f090007;
-        public static final int tag_detail_save=0x7f090006;
-        public static final int tag_detail_tag_description=0x7f090005;
-        public static final int tag_detail_tag_name=0x7f090004;
+        public static final int menu_settings=0x7f090008;
+        public static final int show_tags_list_button=0x7f090006;
+        public static final int summary_count_tv=0x7f090005;
+        public static final int tag_detail_save=0x7f090004;
+        public static final int tag_detail_tag_description=0x7f090003;
+        public static final int tag_detail_tag_name=0x7f090002;
     }
     public static final class layout {
         public static final int activity_dashboard=0x7f030000;
@@ -190,18 +188,19 @@ public final class R {
         public static final int activity_main=0x7f080000;
     }
     public static final class string {
-        public static final int add_new_tag=0x7f070009;
+        public static final int add_new_tag=0x7f07000a;
         public static final int app_name=0x7f070000;
-        public static final int dummy_click_message=0x7f070007;
+        public static final int dummy_click_message=0x7f070008;
         public static final int error_invalid_projection=0x7f070005;
         public static final int error_not_implemented_fragment_interface=0x7f070006;
         public static final int error_unknown_uri=0x7f070004;
+        public static final int error_unsupported_operation=0x7f070007;
         public static final int hello_world=0x7f070001;
         public static final int menu_settings=0x7f070002;
-        public static final int show_tags_list=0x7f070008;
-        public static final int tag_detail_activity_enter_tag_description=0x7f07000b;
-        public static final int tag_detail_activity_enter_tag_name=0x7f07000a;
-        public static final int tag_detail_activity_save_tag=0x7f07000c;
+        public static final int show_tags_list=0x7f070009;
+        public static final int tag_detail_activity_enter_tag_description=0x7f07000c;
+        public static final int tag_detail_activity_enter_tag_name=0x7f07000b;
+        public static final int tag_detail_activity_save_tag=0x7f07000d;
         public static final int title_activity_main=0x7f070003;
     }
     public static final class style {

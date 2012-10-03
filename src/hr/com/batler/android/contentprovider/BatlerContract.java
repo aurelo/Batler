@@ -62,7 +62,7 @@ public final class BatlerContract {
 		public static String CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE + FORWARDSLASH + AUTHORITY + FORWARDSLASH + BASE_PATH;
 		
 		
-		public interface TagColumns {
+		public interface TagColumns extends DescColumns {
 	        /**
 	         * projection of all Tags columns
 	         */

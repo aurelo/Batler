@@ -64,7 +64,7 @@ public class BatlerContentProvider extends ContentProvider {
 			throw new IllegalArgumentException(resHandler.getErrorMessage(R.string.error_unknown_uri, uri));
 		}
 		
-		SQLiteDatabase db = openForRead();
+		SQLiteDatabase db = openDatabaseForRead();
 
 		return qb.query(db, projection, selection, selectionArgs, null, null,
 				sortOrder);
@@ -72,7 +72,7 @@ public class BatlerContentProvider extends ContentProvider {
 
 	@Override
 	public int delete(Uri uri, String selection, String[] selectionArgs) {
-		SQLiteDatabase db = openForWrite();
+		SQLiteDatabase db = openDatabaseForWrite();
 		db.close();
 		return 0;
 	}
@@ -91,7 +91,25 @@ public class BatlerContentProvider extends ContentProvider {
 
 	@Override
 	public Uri insert(Uri uri, ContentValues values) {
-		return null;
+
+		Uri returnUri = null;
+
+		switch (matcher.match(uri)) {
+		case TAGS:
+			returnUri = TagTable.insert(openDatabaseForWrite(), values);
+			break;
+
+		default:
+			throw new IllegalArgumentException(resHandler.getErrorMessage(
+					R.string.error_unknown_uri, uri));
+		}
+
+		// if insert was successful return Uri will not be empty
+		if (returnUri != null) {
+			getContext().getContentResolver().notifyChange(returnUri, null);
+		}
+
+		return returnUri;
 	}
 
 
@@ -102,11 +120,11 @@ public class BatlerContentProvider extends ContentProvider {
 		return 0;
 	}
 
-	private SQLiteDatabase openForRead() {
+	private SQLiteDatabase openDatabaseForRead() {
 		return database.getReadableDatabase();
 	}
 
-	private SQLiteDatabase openForWrite() {
+	private SQLiteDatabase openDatabaseForWrite() {
 		return database.getWritableDatabase();
 	}
 	
